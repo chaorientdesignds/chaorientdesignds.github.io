@@ -28,9 +28,9 @@ export function ContentTitle({ children, hashtag, sx }) {
     )
 }
 
-export function ContentText({children}){
+export function ContentText({children, sx={}}){
     return (
-        <Typography variant="body1" component="div" gutterBottom sx={{mb: 5, mt: 1}}>
+        <Typography variant="body1" component="div" gutterBottom sx={{mb: 5, mt: 1, ...sx}}>
             {children}
         </Typography>
     )

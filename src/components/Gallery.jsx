@@ -6,7 +6,7 @@ import {
 } from '@mui/material'
 import { intentOptions, genreOptions } from '../helper';
 import { CardChip, CharacterChip } from './Helpers'
-import DataStories from '../../public/stories.json'
+import DataStories from '../assets/stories.json'
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
@@ -211,7 +211,7 @@ const StoryContent = forwardRef(function StoryContent(props, ref) {
                             <TableCell component="th" scope="row"><CharacterChip character='MC' size='large'/></TableCell>
                             <TableCell align='justify' spacing={3}>
                                 {story.MC}
-                                <CardChip info={(story.MCVisible) ? 'Visible' : 'Invisible'} sx={{ ml: 1 }} />
+                                {/*<CardChip info={(story.MCVisible) ? 'Visible' : 'Invisible'} sx={{ ml: 1 }} />*/}
                                 <CardChip info={(story.MCConsistent) ? 'Consistent' : 'Inconsistent'} sx={{ ml: 1 }} />
                             </TableCell>
                         </TableRow>
@@ -240,7 +240,7 @@ const StoryContent = forwardRef(function StoryContent(props, ref) {
                             <TableCell component="th" scope="row"><CharacterChip character='SC' size='large'/></TableCell>
                             <TableCell align='justify' spacing={3}>
                                 {(story.SC !==  null) ? story.SC : 'N/A' }
-                                {story.SCVisible && <CardChip info={(story.SCVisible) ? 'Visible' : 'Invisible'} sx={{ ml: 1 }} />}
+                                {/*story.SCVisible && <CardChip info={(story.SCVisible) ? 'Visible' : 'Invisible'} sx={{ ml: 1 }} />*/}
                                 {story.SCForm && <CardChip info={story.SCForm} sx={{ ml: 1 }} />}
                             </TableCell>
                         </TableRow>

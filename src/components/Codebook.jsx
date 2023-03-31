@@ -1,5 +1,5 @@
 import { Grid, Table, TableCell, TableHead, TableRow, TableContainer, Paper, TableBody, Chip, Stack, Typography } from '@mui/material'
-import Data from '../../public/codebook.json'
+import Data from '../assets/codebook.json'
 import { Link } from 'react-router-dom';
 import { CharacterChip } from './Helpers';
 
